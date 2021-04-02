@@ -1,0 +1,253 @@
+{
+    "values": {
+        "settings": {
+            "appGeocoders": [
+                {
+                    "singleLineFieldName": "SingleLine",
+                    "name": "ArcGIS World Geocoding Service",
+                    "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+                }
+            ],
+            "layout": {
+                "id": "tab"
+            },
+            "layoutOptions": {
+                "description": true,
+                "legend": "panel",
+                "panel": {
+                    "position": "right",
+                    "size": "medium"
+                },
+                "panelMapOverlap": false
+            },
+            "mapOptions": {
+                "overview": {
+                    "enable": false,
+                    "openByDefault": true
+                },
+                "locateBtn": {
+                    "enable": true
+                },
+                "geocoder": {
+                    "enable": true
+                },
+                "mapsSync": true
+            },
+            "theme": {
+                "colors": {
+                    "name": "tab-default-1-modified",
+                    "group": "modified",
+                    "themeMajor": "Taylor1",
+                    "header": "#FAF2E6",
+                    "headerTitle": "#9d2237",
+                    "headerText": "#9d2237",
+                    "panel": "#DBD9DA",
+                    "text": "#9d2237",
+                    "textLink": "#555555",
+                    "media": "#8f999f",
+                    "mapControls": "#DBD9DA",
+                    "softText": "#444444",
+                    "softBtn": "#444444",
+                    "esriLogo": "white",
+                    "esriLogoMobile": "black",
+                    "tab": "#16697A",
+                    "tabActive": "#00a3bc",
+                    "tabHover": "#477D94",
+                    "tabText": "#FFFFFF",
+                    "tabTextHover": "#FFFFFF",
+                    "tabTextActive": "#FFFFFF"
+                }
+            },
+            "header": {
+                "linkText": "By Natalie Hayashibara",
+                "linkURL": "https://storymaps.arcgis.com",
+                "logoURL": "https://www.arcgis.com/sharing/rest/content/items/b35801cb374b43fc845e285a6fc643e0/resources/sm_series_logo__1614026027245.png",
+                "logoTarget": "",
+                "social": {
+                    "facebook": true,
+                    "twitter": true,
+                    "bitly": true
+                },
+                "compactSize": true
+            }
+        },
+        "title": "HAPPY TRAVELER STORY MAP",
+        "story": {
+            "storage": "WEBAPP",
+            "entries": [
+                {
+                    "title": "App Tutorial",
+                    "contentActions": [
+                        {
+                            "id": "MJ-ACTION-1614025891699",
+                            "type": "navigate",
+                            "index": 1
+                        },
+                        {
+                            "id": "MJ-ACTION-1615502162610",
+                            "type": "navigate",
+                            "index": 4
+                        }
+                    ],
+                    "creaDate": 1613722047575,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://storymaps.arcgis.com/stories/5f9fd71c957d40d9b56835c9504f7e76",
+                            "type": "webpage",
+                            "altText": "",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": "<p>After you read this page, press this button or click the Information Sheet&nbsp;tab. If you're on mobile, click the menu button on the top left.&nbsp;</p>\n\n<p><span><a class=\"btn-new\" data-storymaps=\"MJ-ACTION-1614025891699\" data-storymaps-type=\"navigate\">Click here to continue</a></span></p>\n\n<p><span>If you've already been here and want to go straight to the map dashboard <a class=\"btn-blue\" data-storymaps=\"MJ-ACTION-1615502162610\" data-storymaps-type=\"navigate\">click here</a></span></p>\n<style type=\"text/css\">.btn-orange {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #FFFFFF;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 50%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-orange:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-blue {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #00a3bc;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #4f6b82 !important;\n     width: 20%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-blue:hover {\n     background-color: #4f6b82;\n     border-bottom: 2px solid #4f6b82 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-inline {\n     display: inline-block;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     background-color: transparent;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent !important;\n     color: #00ccff !important;\n     border-radius: 2px;\n     padding: 0px 0px;\n     margin: 0px;\n}\n.btn-inline:hover {\n     background-color: transparent;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent;\n     color: #ffffff !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-new {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #f58b64;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 40%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-new:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n</style>\n"
+                },
+                {
+                    "title": "Information Sheet",
+                    "contentActions": [
+                        {
+                            "id": "MJ-ACTION-1613282972008",
+                            "type": "navigate",
+                            "index": 2
+                        }
+                    ],
+                    "creaDate": 1613359783467,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://storymaps.arcgis.com/stories/3b92c46ce157474e90514a4454a8ebc4",
+                            "type": "webpage",
+                            "altText": "",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": "<p>After you read this page, press this button or click the Welcome! tab. If you're on mobile, click the menu button on the top left.&nbsp;</p>\n\n<p><a class=\"btn-new\" data-storymaps=\"MJ-ACTION-1613282972008\" data-storymaps-type=\"navigate\">Click here to continue</a></p>\n<style type=\"text/css\">.btn-orange {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #FFFFFF;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 50%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-orange:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-blue {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #00a3bc;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #4f6b82 !important;\n     width: 20%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-blue:hover {\n     background-color: #4f6b82;\n     border-bottom: 2px solid #4f6b82 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-inline {\n     display: inline-block;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     background-color: transparent;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent !important;\n     color: #00ccff !important;\n     border-radius: 2px;\n     padding: 0px 0px;\n     margin: 0px;\n}\n.btn-inline:hover {\n     background-color: transparent;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent;\n     color: #ffffff !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-new {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #f58b64;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 40%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-new:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n</style>\n"
+                },
+                {
+                    "title": "Welcome!",
+                    "contentActions": [
+                        {
+                            "id": "MJ-ACTION-1613283163518",
+                            "type": "navigate",
+                            "index": 3
+                        }
+                    ],
+                    "creaDate": 1613363657448,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://storymaps.arcgis.com/stories/248bb244e7c745bba917e586e247edd1",
+                            "type": "webpage",
+                            "altText": "",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": "<p>After you read this page, press this button or click the Survey&nbsp;tab.</p>\n\n<p>Please take the survey before moving on to other tabs.&nbsp;</p>\n\n<p><a class=\"btn-new\" data-storymaps=\"MJ-ACTION-1613283163518\" data-storymaps-type=\"navigate\">Click here to continue&nbsp;</a></p>\n<style type=\"text/css\">.btn-orange {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #FFFFFF;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 40%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-orange:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-blue {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #00a3bc;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #4f6b82 !important;\n     width: 20%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-blue:hover {\n     background-color: #4f6b82;\n     border-bottom: 2px solid #4f6b82 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-inline {\n     display: inline-block;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     background-color: transparent;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent !important;\n     color: #00ccff !important;\n     border-radius: 2px;\n     padding: 0px 0px;\n     margin: 0px;\n}\n.btn-inline:hover {\n     background-color: transparent;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent;\n     color: #ffffff !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-new {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #f58b64;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 40%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-new:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n</style>\n"
+                },
+                {
+                    "title": "Survey",
+                    "contentActions": [
+                        {
+                            "id": "MJ-ACTION-1614026284633",
+                            "type": "navigate",
+                            "index": 4
+                        },
+                        {
+                            "id": "MJ-ACTION-1614026303066",
+                            "type": "navigate",
+                            "index": 5
+                        }
+                    ],
+                    "creaDate": 1613362422024,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://survey123.arcgis.com/share/de8a11f3234944b88d3f5a7937e8732d",
+                            "type": "webpage",
+                            "altText": "Happy Traveler Joy and Well-being Survey",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": "<p>Thank you for your participation in this study!&nbsp;</p>\n\n<p>Feel free to explore the <a class=\"btn-new\" data-storymaps=\"MJ-ACTION-1614026284633\" data-storymaps-type=\"navigate\">Dashboard</a>&nbsp;to see what other people have shared&nbsp;or the <a class=\"btn-blue\" data-storymaps=\"MJ-ACTION-1614026303066\" data-storymaps-type=\"navigate\">Mental Health Resources</a>&nbsp;page&nbsp;</p>\n<style type=\"text/css\">.btn-orange {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #FFFFFF;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 32%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-orange:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-blue {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #00a3bc;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #4f6b82 !important;\n     width: 55%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-blue:hover {\n     background-color: #4f6b82;\n     border-bottom: 2px solid #4f6b82 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-inline {\n     display: inline-block;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     background-color: transparent;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent !important;\n     color: #00ccff !important;\n     border-radius: 2px;\n     padding: 0px 0px;\n     margin: 0px;\n}\n.btn-inline:hover {\n     background-color: transparent;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent;\n     color: #ffffff !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-new {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #f58b64;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 25%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-new:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n</style>\n"
+                },
+                {
+                    "title": "Dashboard",
+                    "contentActions": [],
+                    "creaDate": 1617088141578,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://uscssi.maps.arcgis.com/apps/webappviewer/index.html?id=3aee5086467544fd9d389b715ba554d9",
+                            "type": "webpage",
+                            "altText": "Happy Traveler Dashboard",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": ""
+                },
+                {
+                    "title": "Mental Health Resources",
+                    "contentActions": [
+                        {
+                            "id": "MJ-ACTION-1613531037167",
+                            "type": "navigate",
+                            "index": 4
+                        }
+                    ],
+                    "creaDate": 1613367550500,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://storymaps.arcgis.com/stories/e0821f0b64a64f3fa30e061b20b0aae5",
+                            "type": "webpage",
+                            "altText": "",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": "<p>Thank you for your participation in this study!&nbsp;</p>\n\n<p>Feel free to explore the&nbsp;<span>&nbsp;<a class=\"btn-blue\" data-storymaps=\"MJ-ACTION-1613531037167\" data-storymaps-type=\"navigate\">Dashboard</a></span>&nbsp;or finish using the app by filling out the <a class=\"btn-new\" data-storymaps=\"MJ-ACTION-1613464011602\" data-storymaps-type=\"navigate\">Feedback Survey</a>.</p>\n<style type=\"text/css\">.btn-orange {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #FFFFFF;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 32%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-orange:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-blue {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #00a3bc;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #4f6b82 !important;\n     width: 30%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-blue:hover {\n     background-color: #4f6b82;\n     border-bottom: 2px solid #4f6b82 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-inline {\n     display: inline-block;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     background-color: transparent;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent !important;\n     color: #00ccff !important;\n     border-radius: 2px;\n     padding: 0px 0px;\n     margin: 0px;\n}\n.btn-inline:hover {\n     background-color: transparent;\n     text-decoration: none !important;\n     font-weight: bold !important;\n     border: 0px solid transparent;\n     border-bottom: 0px solid transparent;\n     color: #ffffff !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n.btn-new {\n     display: inline-block;\n     font-weight: normal !important;\n     background-color: #f58b64;\n     color: #FFFFFF !important;\n     border-bottom: 2px solid #995541 !important;\n     width: 35%;\n     border-radius: 2px;\n     padding: 1px 2px;\n     margin: 2px;\n}\n.btn-new:hover {\n     background-color: #995541;\n     border-bottom: 2px solid #995541 !important;\n     color: #FFFFFF !important;\n   -webkit-transition: all .5s ease;\n   -moz-transition: all .5s ease;\n   -o-transition: all .5s ease;\n   transition: all .5s ease;\n}\n</style>\n"
+                },
+                {
+                    "title": "Feedback Survey",
+                    "contentActions": [],
+                    "creaDate": 1612496049304,
+                    "status": "PUBLISHED",
+                    "media": {
+                        "type": "webpage",
+                        "webpage": {
+                            "url": "https://survey123.arcgis.com/share/e0d5629c90b24846bbfba99003be5dd8",
+                            "type": "webpage",
+                            "altText": "Happy Traveler Feedback Survey",
+                            "display": "stretch",
+                            "unload": true,
+                            "useParentOrigin": false
+                        }
+                    },
+                    "description": ""
+                }
+            ]
+        },
+        "template": {
+            "name": "Map Series",
+            "createdWith": "1.22.0",
+            "editedWith": "1.22.0"
+        }
+    },
+    "_ssl": null
+}
