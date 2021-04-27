@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <title>Mental Health Resources Map</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css" />
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script src="https://js.arcgis.com/4.18/"></script>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/widgets/Expand",
+        "esri/widgets/BasemapGallery",
+        "esri/widgets/LayerList",
+        "esri/widgets/Locate",
+        "esri/layers/FeatureLayer",
+        "esri/PopupTemplate",
+        "esri/core/watchUtils"
+      ], function (
+        Map,
+        MapView,
+        Expand,
+        BasemapGallery,
+        LayerList,
+        Locate,
+        FeatureLayer,
+        PopupTemplate,
+        watchUtils,
+      ) {
+
+        //Create map
+        const map = new Map({
+          basemap: "gray",
+        });
+
+        //Create Map View
+        const view = new MapView({
+          map: map,
+          container: "viewDiv",
+          zoom: 15,
+          center: [-118.2856, 34.021],
+          popup: {
+            defaultPopupTemplateEnabled: false,
+            dockEnabled: true,
+            dockOptions: {
+              buttonEnabled: false,
+              breakpoint: false
+            }
+          }
+        });
+		//popup template
+        var template = {
+          title: "{Name}",
+          content: [
+            {
+              type: "text", // Text content
+              text: "{Des}"
+            },
+            {
+              type: "fields",
+              fieldInfos: [
+                {
+                  fieldName: "Hours",
+                  label: "Hours"
+                },
+                {
+                  fieldName: "Address",
+                  label: "Address",
+
+                },
+                {
+                  fieldName: "Website",
+                  label: "Website",
+
+                },
+                {
+                  fieldName: "Email",
+                  label: "Email",
+
+                },
+                {
+                  fieldName: "Phone",
+                  label: "Phone number",
+
+                }
+              ]
+            }
+          ]
+        };
+
+        // Reference the popupTemplate 
+        var featureLayer = new FeatureLayer({
+          url: "https://services1.arcgis.com/ZIL9uO234SBBPGL7/ArcGIS/rest/services/Mental_Health_Resources_map/FeatureServer/0?token=PcJY1Eiwu9RbNWz-d12aEUJ5FtHF-LN8G2NuFueM5Oul74FZ_XJJUlyTJIlNT5s-T-0vIS2Uvsjuk4wTRl6kpKxZAscyoBVqWdRfBiKHTKewLEyY78ZgByR_Ezm105sJA_y6l7DRXm1xS4N-P0z_Coobf8gY-JbAWWC200m_wkDk99KBvpYt1uca39_EXArRh6zH7obXYDwH6KAkzSVJMCyax0C2H6OZXkA1gZ-ad8m93mMnPNlbG1tPJciWoDN2DoDhlk1yhlB2ptGBO8xl4g..",
+          popupTemplate: template
+        });
+        map.add(featureLayer);
+
+              // add the UI for a title
+              view.ui.add("titleDiv", "top-right");
+
+        //add basemap widget
+        var basemapGallery = new BasemapGallery({
+          view: view,
+          container: document.createElement("div")
+        });
+
+        // expand variable to collapse basemap widget
+
+        var bgExpand = new Expand({
+          view: view,
+          content: basemapGallery
+        });
+
+        basemapGallery.watch("activeBasemap", function() {
+          var mobileSize =
+            view.heightBreakpoint === "xsmall" ||
+            view.widthBreakpoint === "xsmall";
+
+          if (mobileSize) {
+            bgExpand.collapse();
+          }
+        });
+
+        view.ui.add(bgExpand, "top-left");
+
+        // add LayerList plus legend widget
+        const layerList = new LayerList({
+           view: view,
+           listItemCreatedFunction: function(event) {
+             const item = event.item;
+             if (item.layer.type != "group") {
+               // don't show legend twice
+               item.panel = {
+                 content: "legend",
+                 open: true
+               };
+             }
+           }
+         });
+
+        //expand layer list
+        layerListExpand = new Expand({
+          expandIconClass: "esri-icon-layer-list",  // see https://developers.arcgis.com/javascript/latest/guide/esri-icon-font/
+          view: view,
+          content: layerList
+        });
+        view.ui.add(layerListExpand, "top-left");
+
+		// locate widget
+        var locateBtn = new Locate({
+          view: view
+        });
+
+        view.ui.add(locateBtn, {
+          position: "top-left"
+        });
+
+
+      });
+    </script>
+  </head>
+
+  <body>
+        <div id="viewDiv"></div>
+    <div id="titleDiv" class="esri-widget">
+          <div id="titleText">Click on a red point to read more about the resource </div>
+
+    </div>
+  </body>
+</html>
